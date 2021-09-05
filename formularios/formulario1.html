@@ -1,0 +1,54 @@
+<h4>FORMULÁRIO</h4>
+
+<form id="formularioAjax" action="dados.txt"  method="post" enctype="multipart/form-data">
+
+    <div class="card mb-3">
+        <div class="card-body">
+            <div class="mb-3">
+                <label for="capa" class="form-label">Capa</label>
+                <input type="file" name="capa" id="capa" class="form-control capa"/>
+                <div class="progress mt-1">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated"></div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="titulo" class="form-label">Nome<sup class="text-danger">*</sup></label>
+                <input type="text" name="titulo" id="titulo" value="" class="form-control" >
+            </div>
+
+            <div class="mb-3">
+                <label for="texto" class="form-label">Descrição<sup class="text-danger">*</sup></label>
+                <textarea name="texto" id="mytextarea" class="form-control" rows="5"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="atendimento" class="form-label">Horário de Atendimento<sup class="text-danger">*</sup></label>
+                <input type="text" name="atendimento" id="atendimento" value="" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="responsavel" class="form-label">Responsável<sup class="text-danger">*</sup></label>
+                <input type="text" name="responsavel" id="responsavel" value="" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail<sup class="text-danger">*</sup></label>
+                <input type="email" name="email" id="email" value="" class="form-control" >
+            </div>
+
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone<sup class="text-danger">*</sup></label>
+                <input type="text" name="telefone" id="telefone" value="" class="form-control" >
+            </div>
+
+            <label for="status" class="form-label">Status</label>
+            <select class="form-select mb-3" name="status" id="status"  required>
+                <option value="1" >Ativo</option>
+                <option value="0" selected>Inativo</option>
+            </select>                          
+
+        </div>
+    </div>
+
+    <button type="submit" id="enviar" class="botao">Cadastrar</button>
+</form>
